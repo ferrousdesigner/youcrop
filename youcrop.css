@@ -1,0 +1,84 @@
+body{
+    color: #888;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.title i{
+    margin-left: 5px;
+    color: #f00;
+    text-align: center;
+    font-size: 8rem;
+}
+.control-container {
+    justify-content: center;
+    background: white;
+    padding: 1rem 2rem;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+}
+ .start {
+    color: #f00;
+    padding: 0.8rem 1.5rem;
+    background: #fff;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.start:focus{
+    outline: none;
+}
+.start span {
+    margin-right: 5px;
+}
+.start i {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.start:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.start.active {
+    border:  2px solid #f00;
+}
+.rotate > i {
+    animation: rotate 0.3s linear infinite;
+}
+.auth {
+    text-align: center;
+}
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+.ferrous-link {
+    color: #f00;
+    text-decoration: none;
+    margin-top: 1rem;
+}
